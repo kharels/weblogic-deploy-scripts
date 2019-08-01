@@ -1,0 +1,21 @@
+--- 
+SSL_prefix: 8
+NON_SSL_prefix: 7
+example_app: 
+  admin_server_domain: example
+  admin_server_os: linux
+  admin_server_stack_num: 01
+  admin_server_suffix: webapp
+  environment: 
+      DEV: 
+        jvm_target: 
+          - managed1
+      PROD: 
+        jvm_target:
+          - managed1
+          - managed2
+      TEST: 
+        jvm_target: 
+          - managed1
+          - managed2
+  name: example.war
